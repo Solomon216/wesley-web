@@ -1,0 +1,90 @@
+“Create a modern, interactive landing page for C.S.I. Wesley Church, Poonamallee, featuring a smooth UI with glassmorphism, soft gradients, and subtle animations throughout. The website should have a clean, modern aesthetic, a spiritual warmth, and elegant typography balance.
+
+Design & Typography
+
+Primary Font: Cinzel (for headings and the church name)
+
+Secondary Font: Montserrat Regular and Italic (for body text, captions, and emphasized words)
+
+Selective use of italic text for event names, quotes, and key info
+
+Employ soft color gradients and frosted glassmorphism surfaces under sections and cards
+
+Smooth transitions, hover effects, and scroll-triggered animations
+
+Navbar
+
+Place the church logo on the top-left
+
+Put ‘C.S.I. Wesley Church’ in the navbar beside the logo (not repeated in the hero section)
+
+Simple right-aligned nav links: Home, About, Services, Presbyter, Events, Contact
+
+Home Section
+
+Hero banner featuring a Bible verse in elegant italic Cinzel or Montserrat font (example placeholder: “Let all that you do be done in love.”)
+
+Subtle background blur, gradient overlay, and small animation (like a slow parallax light motion)
+
+Layered frosted glass card with an inviting “Join Us This Sunday” button and soft hover glow
+
+About Section
+
+Section title: “About Our Church”
+
+Describe the history of three churches merging into one under the C.S.I. Wesley Church fellowship
+
+Animated photo grid or fade-in image cards showing old churches and current community moments
+
+Use partial glass panels behind text for a cohesive style
+
+Services Section
+
+Title: “Service Timings & Locations”
+
+Show cards with timings, addresses, and embedded map snippets for Sunday and weekday services
+
+Each card slightly lifts and brightens on hover (soft shadow and glow)
+
+Use gradient backgrounds with subtle white transparency for glassmorphism look
+
+Presbyter Section
+
+Title: “Our Presbyter”
+
+Include presbyter’s photo inside a circular frosted glass frame with light reflection animation
+
+Below it, a short welcome note in Montserrat Italic
+
+Events Section
+
+Title: “Upcoming Events”
+
+Interactive horizontal scroll view or grid showing event cards with smooth hover reveals
+
+Event names italicized; date and description fade in on hover
+
+Add animated “Learn More” button glow
+
+Contact/Footer
+
+Glassmorphic contact card with location pin (Poonamallee), contact details, social icons with hover color transitions
+
+Gradient bar footer with light opacity and smooth fade-in
+
+Sample Image Assets:
+
+hero_banner.jpg – Church exterior or welcoming congregation
+
+presbyter_portrait.png – Presbyter’s portrait
+
+church_old1.jpg, church_old2.jpg, church_old3.jpg – Historical images
+
+service_photo.jpg – Church interior during worship
+
+event_placeholder.jpg – Example event image
+
+logo.png – Existing church logo
+
+Mood & Feel
+Use peaceful gradients (lavender, gold, white tones), subtle glass blur transparency, and animated icons or particles to add divine tranquility and interactivity without clutter. Ensure smooth mobile responsiveness and silky transitions.”
