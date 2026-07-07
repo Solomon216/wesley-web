@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import GlassCard from "./GlassCard";
-import presbyterImage from "@assets/generated_images/Presbyter_portrait_photo_ff6b5582.png";
+import presbyterImage from "@assets/churches/presbyter.jpg";
 
 export default function PresbyterSection() {
   const [isShimmering, setIsShimmering] = useState(false);
@@ -30,9 +30,8 @@ export default function PresbyterSection() {
         <div className="flex justify-center mb-8">
           <div className="relative">
             <GlassCard
-              className={`p-2 rounded-full transition-all duration-1000 ${
-                isShimmering ? "shadow-2xl shadow-primary/50 scale-105" : ""
-              }`}
+              className={`p-2 rounded-full transition-all duration-1000 ${isShimmering ? "shadow-2xl shadow-primary/50 scale-105" : ""
+                }`}
             >
               <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-white/40">
                 <img
@@ -48,7 +47,7 @@ export default function PresbyterSection() {
 
         <GlassCard className="p-8 max-w-2xl mx-auto">
           <h3 className="font-serif text-2xl font-bold text-foreground mb-4" data-testid="text-presbyter-name">
-            Rev. Dr. Samuel Wesley
+            Revd. C.R. Samson Rasa
           </h3>
           <p className="text-lg text-foreground italic leading-relaxed" data-testid="text-presbyter-message">
             "Dear beloved congregation, it is my honor and privilege to serve as your presbyter. Together, we

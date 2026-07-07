@@ -31,9 +31,9 @@ export default function ContactFooter() {
               </div>
               <p className="text-foreground" data-testid="text-contact-address">
                 C.S.I. Wesley Church<br />
-                Main Road, Poonamallee<br />
-                Chennai - 600056<br />
-                Tamil Nadu, India
+                20/14, SH 113, Sheesha Nagar<br />
+                Poonamallee, Chennai<br />
+                Tamil Nadu - 600056
               </p>
             </div>
 

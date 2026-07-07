@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import churchLogo from "@assets/generated_images/Church_logo_design_234cd840.png";
+import churchLogo from "@assets/churches/CSI Wesley Chruch Logo.jpg";
 
 const navLinks = [
   { name: "Home", href: "#home" },

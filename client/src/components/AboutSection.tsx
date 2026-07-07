@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import GlassCard from "./GlassCard";
-import church1 from "@assets/generated_images/Historical_church_photo_one_b0adb110.png";
-import church2 from "@assets/generated_images/Historical_church_photo_two_e3af3c00.png";
+import church1 from "@assets/churches/church1.jpg";
+import church2 from "@assets/churches/church2.jpg";
 import church3 from "@assets/generated_images/Historical_church_photo_three_83c2db23.png";
 
 const historyImages = [
-  { src: church1, alt: "First Heritage Church" },
-  { src: church2, alt: "Second Heritage Church" },
-  { src: church3, alt: "Third Heritage Church" },
+  { src: church1, alt: "1900" },
+  { src: church2, alt: "1932" },
+  { src: church3, alt: "2010" },
 ];
 
 export default function AboutSection() {
@@ -67,11 +67,10 @@ export default function AboutSection() {
           {historyImages.map((image, index) => (
             <div
               key={index}
-              className={`transition-all duration-700 ${
-                isVisible
+              className={`transition-all duration-700 ${isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
-              }`}
+                }`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <GlassCard className="overflow-hidden hover-elevate transition-all duration-300 hover:-translate-y-1">
