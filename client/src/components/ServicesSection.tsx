@@ -8,7 +8,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="py-20 px-4 bg-gradient-to-br from-amber-50 to-purple-50 dark:from-amber-950/20 dark:to-purple-950/20"
+      className="py-24 px-4 bg-gradient-to-br from-amber-50/40 via-white to-purple-50/40 dark:from-amber-950/10 dark:via-background dark:to-purple-950/10"
     >
       <div className="max-w-7xl mx-auto">
         <h2
@@ -22,7 +22,7 @@ export default function ServicesSection() {
         </p>
 
         <div className="max-w-5xl mx-auto">
-          <GlassCard className="p-8 hover-elevate transition-all duration-300 hover:shadow-2xl">
+          <GlassCard className="p-8 hover:shadow-[0_20px_50px_rgba(107,33,168,0.08)] hover:border-purple-300/50 border-purple-200/50 bg-white/90 dark:bg-card">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
               
               {/* Service Details (Left 7 Columns) */}
@@ -47,7 +47,7 @@ export default function ServicesSection() {
                   {/* Two Service Sessions */}
                   <div className="space-y-4">
                     {/* First Service */}
-                    <div className="flex items-start gap-4 p-4 rounded-xl bg-white/30 dark:bg-white/5 border border-white/20">
+                    <div className="flex items-start gap-4 p-4 rounded-xl bg-purple-50/40 dark:bg-white/5 border border-purple-100 dark:border-white/10 hover:border-primary/50 hover:shadow-md hover:translate-x-1 transition-all duration-300">
                       <div className="p-2 rounded-lg bg-primary/10 text-primary mt-1">
                         <Clock className="w-5 h-5" />
                       </div>
@@ -60,7 +60,7 @@ export default function ServicesSection() {
                     </div>
 
                     {/* Second Service */}
-                    <div className="flex items-start gap-4 p-4 rounded-xl bg-white/30 dark:bg-white/5 border border-white/20">
+                    <div className="flex items-start gap-4 p-4 rounded-xl bg-purple-50/40 dark:bg-white/5 border border-purple-100 dark:border-white/10 hover:border-primary/50 hover:shadow-md hover:translate-x-1 transition-all duration-300">
                       <div className="p-2 rounded-lg bg-primary/10 text-primary mt-1">
                         <Clock className="w-5 h-5" />
                       </div>
@@ -103,7 +103,7 @@ export default function ServicesSection() {
               </div>
 
               {/* Map (Right 5 Columns) */}
-              <div className="lg:col-span-5 h-[300px] lg:h-auto min-h-[280px] rounded-2xl overflow-hidden border border-border/40 relative bg-muted animate-fade-in">
+              <div className="lg:col-span-5 h-[300px] lg:h-auto min-h-[280px] rounded-2xl overflow-hidden border border-purple-200/50 dark:border-white/10 relative bg-muted animate-fade-in shadow-md">
                 <iframe
                   src={mapUrl}
                   width="100%"

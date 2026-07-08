@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import churchLogo from "@assets/churches/CSI Wesley Chruch Logo.jpg";
@@ -13,13 +14,26 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const [location, setLocation] = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavClick = (href: string) => {
     setIsMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    
+    if (location !== "/") {
+      setLocation("/");
+      // Delay slightly to allow homepage to mount before scrolling
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 150);
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -27,7 +41,13 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-background/80 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-3">
+          <div 
+            className="flex items-center gap-3 cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() => {
+              setLocation("/");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             <img src={churchLogo} alt="CSI Wesley Church Logo" className="h-10 w-10" data-testid="img-logo" />
             <span className="font-serif text-lg sm:text-xl font-bold text-foreground" data-testid="text-church-name">
               C.S.I. Wesley Church
